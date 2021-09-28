@@ -2,6 +2,7 @@ var route = [
   {
     path: "/",
     component: () => import("../layout/Master.vue"),
+    redirect: '/auth/login',
     children: [
       {
         name: "home",
@@ -16,14 +17,26 @@ var route = [
     ],
   },
   {
-    name: "login",
-    path: "/login",
-    component: () => import("../pages/auth/Auth.vue"),
+    path: "/auth",
+    component: () => import("../layout/PageLayout.vue"),
+    children: [
+      {
+        name: "login",
+        path: "login",
+        component: () => import("../pages/auth/Auth.vue"),
+      },
+      {
+        name: "signup",
+        path: "signup",
+        component: () => import("../pages/auth/Signup.vue"),
+      },
+      {
+        name: "found",
+        path: "found",
+        component: () => import("../pages/auth/Found.vue"),
+      },
+    ]
   },
-  {
-    name: "sign",
-    path: "/sign",
-    component: () => import("../pages/auth/Sign.vue"),
-  },
+  
 ];
 export default route;

@@ -2,7 +2,7 @@
   <div class="flex justify-center items-center">
     <div class="w-1/6">
       <div class="font-black text-5xl">PMS.com</div>
-      <div class="mt-10 text-3xl">登录</div>
+      <div class="mt-10 text-3xl">注册</div>
     </div>
     <div class="w-1/6">
       <form class="mt-8 space-y-6 border p-4 shadow" @submit="submit($event)">
@@ -66,42 +66,69 @@
               placeholder="密码"
             />
           </div>
-        </div>
-
-        <div class="flex items-center justify-between">
-          <div class="flex items-center">
+          <div>
+            <label for="phone" class="sr-only">手机号</label>
             <input
-              id="remember-me"
-              name="remember-me"
-              type="checkbox"
+              v-model="form.phone"
+              id="phone"
+              name="phone"
+              type="phone"
+              required=""
               class="
-                h-4
-                w-4
-                text-blue-600
+                appearance-none
+                rounded-none
+                relative
+                block
+                w-full
+                px-3
+                py-2
+                border border-gray-300
+                placeholder-gray-500
+                text-gray-900
+                rounded-b-md
+                focus:outline-none
                 focus:ring-blue-500
-                border-gray-300
-                rounded
+                focus:border-blue-500
+                focus:z-10
+                sm:text-sm
               "
+              placeholder="手机号"
             />
-            <label for="remember-me" class="ml-2 block text-sm text-gray-900">
-              记住我
-            </label>
           </div>
-
-          <div class="text-sm">
-            <router-link
-              :to="{ name: 'found' }"
-              class="font-medium text-blue-600 hover:text-blue-500"
-            >
-              忘记密码</router-link
-            >
+          <div>
+            <label for="verifCode" class="sr-only">验证码</label>
+            <input
+              v-model="form.verifCode"
+              id="verifCode"
+              name="verifCode"
+              type="verifCode"
+              required=""
+              class="
+                appearance-none
+                rounded-none
+                relative
+                block
+                w-full
+                px-3
+                py-2
+                border border-gray-300
+                placeholder-gray-500
+                text-gray-900
+                rounded-b-md
+                focus:outline-none
+                focus:ring-blue-500
+                focus:border-blue-500
+                focus:z-10
+                sm:text-sm
+              "
+              placeholder="验证码"
+            />
           </div>
         </div>
 
         <div>
           <button
             type="submit"
-            @submit="submit($event)"
             class="
               group
               relative
@@ -129,16 +156,16 @@
                 aria-hidden="true"
               />
             </span>
-            登录
+            注册
           </button>
         </div>
       </form>
       <div class="mt-2 text-sm text-gray-400 hover:text-gray-600">
-        还没有账号?<a
-          @click="goSignup"
+        已经有账号了?<a
+          @click="goLogin"
           href="javascript:;"
           class="cursor-pointer ml-2 hover:text-blue-600"
-          >去注册</a
+          >去登录</a
         >
       </div>
     </div>
@@ -157,17 +184,18 @@ export default {
       form: {
         account: "",
         password: "",
+        phone: "",
+        verifCode: "",
       },
     };
   },
   methods: {
-    goSignup(e) {
-      this.$router.push({ name: "signup" });
+    goLogin(e) {
+      this.$router.push({ name: "login" });
     },
     submit(e) {
-      e.defaultPrevented();
       e.stopPropagation();
-
+      e.defaultPrevented();
       console.log(this.form);
     },
   },
