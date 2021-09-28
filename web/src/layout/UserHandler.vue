@@ -1,5 +1,5 @@
 <template>
-  <div @mouseenter="enter" @mouseleave="leave">
+  <div class="h-full" @mouseenter="enter" @mouseleave="leave">
     <div
       class="
         flex flex-row
@@ -9,15 +9,13 @@
         h-full
         hover:bg-gray-100
         px-4
-        text-gray-400
         hover:text-gray-600
       "
     >
-      <div>
+      <div class="p-2 h-6 w-6 border border-gray-200 rounded-full mx-2">
         <img
-          class="h-4 px-2"
+          class="h-full"
           src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-          alt="Workflow"
         />
       </div>
       <div class="">测试用户</div>
@@ -81,6 +79,6 @@ export default {
 <style scoped>
 .user-handler {
   position: absolute;
-  width: 150px;
+  width: 160px;
 }
 </style>

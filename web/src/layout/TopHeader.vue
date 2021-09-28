@@ -7,18 +7,33 @@
         alt="Workflow"
       />
     </div>
-    <div class="flex flex-row pr-4">
-      <TopSearch class="m-2" />
+    <div class="flex flex-row pr-4 text-gray-400 items-center">
+      <PlusIcon class="h-4 px-1 hover:text-gray-600 cursor-pointer" />
+      <BellIcon class="h-4 px-1 hover:text-gray-600 cursor-pointer" />
+      <TopSearch class="m-2 px-1 hover:text-gray-600 cursor-pointer" />
       <UserHandler />
+      <QuestionMarkCircleIcon
+        class="h-4 px-1 hover:text-gray-600 cursor-pointer"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import TopSearch from "./TopSearch.vue";
+import {
+  LockClosedIcon,
+  PlusIcon,
+  QuestionMarkCircleIcon,
+  BellIcon,
+} from "@heroicons/vue/solid";
+
 import UserHandler from "./UserHandler.vue";
 export default {
   components: {
+    PlusIcon,
+    QuestionMarkCircleIcon,
+    BellIcon,
     TopSearch,
     UserHandler,
   },
