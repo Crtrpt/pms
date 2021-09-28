@@ -235,3 +235,4 @@
 2021-09-28 12:22:15,662 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:547)- Completed initialization in 1 ms
 2021-09-28 12:22:15,718 INFO [http-nio-8080-exec-1] (IndexController.java:21)- 测试请求
 2021-09-28 12:22:17,112 INFO [http-nio-8080-exec-1] (ApiRequestTimeAop.java:42)- API:http://127.0.0.1:8080/ EP: execution(ResultDto com.dj.pms.api.IndexController.getIndex()) GAP: 1396
+2021-09-28 12:37:16,976 WARN [OkHttp ConnectionPool] (Platform.kt:122)- A connection to https://qyapi.weixin.qq.com/ was leaked. Did you forget to close a response body? To see where this was allocated, set the OkHttpClient logger level to FINE: Logger.getLogger(OkHttpClient.class.getName()).setLevel(Level.FINE);
