@@ -31,6 +31,10 @@ public class ProjectEntity extends BaseEntity implements Serializable {
      */
     boolean isPrivate;
 
+    /**
+     * 父项目
+     */
+    String pid;
 
     /**
      * 项目id

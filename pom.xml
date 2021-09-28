@@ -12,11 +12,17 @@
     <artifactId>pms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pms</name>
-    <description>Demo project for Spring Boot</description>
+    <description>PMS 项目管理系统</description>
     <properties>
         <java.version>11</java.version>
     </properties>
     <dependencies>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.4.1</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

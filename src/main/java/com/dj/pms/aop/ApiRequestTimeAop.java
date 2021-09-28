@@ -3,6 +3,7 @@ package com.dj.pms.aop;
 
 import com.dj.pms.config.ApiConfig;
 import com.dj.pms.config.AppConfig;
+import com.dj.pms.service.SystemService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -24,6 +25,9 @@ public class ApiRequestTimeAop {
 
     @Autowired
     ApiConfig apiConfig;
+
+    @Autowired
+    SystemService systemService;
 
 
     @Around("execution(* com.dj.pms.api.*.*(..))")

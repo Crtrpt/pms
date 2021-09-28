@@ -1,0 +1,5 @@
+${AnsiColor.BRIGHT_BLUE}
+${AnsiColor.BRIGHT_GREEN}
+PMS 版本: 2.4.5
+Spring Boot 版本: ${spring-boot.version}${spring-boot.formatted-version}
+${AnsiColor.BLACK}

@@ -1,0 +1,237 @@
+2021-09-28 12:06:41,998 INFO [restartedMain] (StartupInfoLogger.java:55)- Starting PMS using Java 15 on DESKTOP-L7BH4I1 with PID 5504 (D:\pms\target\classes started by Admin in D:\pms)
+2021-09-28 12:06:42,000 INFO [restartedMain] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2021-09-28 12:06:42,029 INFO [restartedMain] (DeferredLog.java:255)- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-28 12:06:42,030 INFO [restartedMain] (DeferredLog.java:255)- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-28 12:06:42,432 INFO [restartedMain] (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-28 12:06:42,448 INFO [restartedMain] (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-09-28 12:06:42,512 WARN [restartedMain] (Logger.java:44)- No MyBatis mapper was found in '[com.dj.pms]' package. Please check your configuration.
+2021-09-28 12:06:42,901 INFO [restartedMain] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2021-09-28 12:06:42,907 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:06:42,908 INFO [restartedMain] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-09-28 12:06:42,908 INFO [restartedMain] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-09-28 12:06:42,956 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-09-28 12:06:42,957 INFO [restartedMain] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 927 ms
+2021-09-28 12:06:42,987 INFO [restartedMain] (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2021-09-28 12:06:43,034 INFO [restartedMain] (DruidDataSource.java:1003)- {dataSource-1} inited
+2021-09-28 12:06:43,142 INFO [restartedMain] (LogHelper.java:31)- HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-28 12:06:43,166 INFO [restartedMain] (Version.java:44)- HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-28 12:06:43,228 INFO [restartedMain] (JavaReflectionManager.java:56)- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-28 12:06:43,453 INFO [restartedMain] (Dialect.java:175)- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-09-28 12:06:43,885 INFO [restartedMain] (JtaPlatformInitiator.java:52)- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-28 12:06:43,891 INFO [restartedMain] (AbstractEntityManagerFactoryBean.java:437)- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-28 12:06:43,927 WARN [restartedMain] (JpaBaseConfiguration.java:219)- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-28 12:06:44,251 INFO [restartedMain] (StdSchedulerFactory.java:1220)- Using default implementation for ThreadExecutor
+2021-09-28 12:06:44,256 INFO [restartedMain] (SchedulerSignalerImpl.java:61)- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-28 12:06:44,257 INFO [restartedMain] (QuartzScheduler.java:229)- Quartz Scheduler v.2.3.2 created.
+2021-09-28 12:06:44,257 INFO [restartedMain] (RAMJobStore.java:155)- RAMJobStore initialized.
+2021-09-28 12:06:44,258 INFO [restartedMain] (QuartzScheduler.java:294)- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-28 12:06:44,258 INFO [restartedMain] (StdSchedulerFactory.java:1374)- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-28 12:06:44,258 INFO [restartedMain] (StdSchedulerFactory.java:1378)- Quartz scheduler version: 2.3.2
+2021-09-28 12:06:44,258 INFO [restartedMain] (QuartzScheduler.java:2293)- JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@67f55b42
+2021-09-28 12:06:44,293 INFO [restartedMain] (OptionalLiveReloadServer.java:58)- LiveReload server is running on port 35729
+2021-09-28 12:06:44,312 INFO [restartedMain] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:06:44,332 INFO [restartedMain] (TomcatWebServer.java:220)- Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-28 12:06:44,333 INFO [restartedMain] (SchedulerFactoryBean.java:727)- Starting Quartz Scheduler now
+2021-09-28 12:06:44,333 INFO [restartedMain] (QuartzScheduler.java:547)- Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-28 12:06:44,341 INFO [restartedMain] (StartupInfoLogger.java:61)- Started PMS in 2.55 seconds (JVM running for 3.196)
+2021-09-28 12:09:03,242 INFO [restartedMain] (StartupInfoLogger.java:55)- Starting PMS using Java 15 on DESKTOP-L7BH4I1 with PID 12604 (D:\pms\target\classes started by Admin in D:\pms)
+2021-09-28 12:09:03,243 INFO [restartedMain] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2021-09-28 12:09:03,273 INFO [restartedMain] (DeferredLog.java:255)- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-28 12:09:03,274 INFO [restartedMain] (DeferredLog.java:255)- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-28 12:09:03,697 INFO [restartedMain] (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-28 12:09:03,708 INFO [restartedMain] (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-09-28 12:09:03,774 WARN [restartedMain] (Logger.java:44)- No MyBatis mapper was found in '[com.dj.pms]' package. Please check your configuration.
+2021-09-28 12:09:04,161 INFO [restartedMain] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2021-09-28 12:09:04,166 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:09:04,167 INFO [restartedMain] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-09-28 12:09:04,167 INFO [restartedMain] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-09-28 12:09:04,218 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-09-28 12:09:04,219 INFO [restartedMain] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 944 ms
+2021-09-28 12:09:04,249 INFO [restartedMain] (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2021-09-28 12:09:04,301 INFO [restartedMain] (DruidDataSource.java:1003)- {dataSource-1} inited
+2021-09-28 12:09:04,412 INFO [restartedMain] (LogHelper.java:31)- HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-28 12:09:04,436 INFO [restartedMain] (Version.java:44)- HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-28 12:09:04,498 INFO [restartedMain] (JavaReflectionManager.java:56)- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-28 12:09:04,736 INFO [restartedMain] (Dialect.java:175)- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-09-28 12:09:05,183 INFO [restartedMain] (JtaPlatformInitiator.java:52)- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-28 12:09:05,189 INFO [restartedMain] (AbstractEntityManagerFactoryBean.java:437)- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-28 12:09:05,225 WARN [restartedMain] (JpaBaseConfiguration.java:219)- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-28 12:09:05,559 INFO [restartedMain] (StdSchedulerFactory.java:1220)- Using default implementation for ThreadExecutor
+2021-09-28 12:09:05,564 INFO [restartedMain] (SchedulerSignalerImpl.java:61)- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-28 12:09:05,564 INFO [restartedMain] (QuartzScheduler.java:229)- Quartz Scheduler v.2.3.2 created.
+2021-09-28 12:09:05,565 INFO [restartedMain] (RAMJobStore.java:155)- RAMJobStore initialized.
+2021-09-28 12:09:05,565 INFO [restartedMain] (QuartzScheduler.java:294)- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-28 12:09:05,566 INFO [restartedMain] (StdSchedulerFactory.java:1374)- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-28 12:09:05,566 INFO [restartedMain] (StdSchedulerFactory.java:1378)- Quartz scheduler version: 2.3.2
+2021-09-28 12:09:05,566 INFO [restartedMain] (QuartzScheduler.java:2293)- JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@12a35979
+2021-09-28 12:09:05,604 INFO [restartedMain] (OptionalLiveReloadServer.java:58)- LiveReload server is running on port 35729
+2021-09-28 12:09:05,622 INFO [restartedMain] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:09:05,642 INFO [restartedMain] (TomcatWebServer.java:220)- Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-28 12:09:05,643 INFO [restartedMain] (SchedulerFactoryBean.java:727)- Starting Quartz Scheduler now
+2021-09-28 12:09:05,643 INFO [restartedMain] (QuartzScheduler.java:547)- Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-28 12:09:05,651 INFO [restartedMain] (StartupInfoLogger.java:61)- Started PMS in 2.62 seconds (JVM running for 3.148)
+2021-09-28 12:09:22,744 INFO [http-nio-8080-exec-1] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-28 12:09:22,744 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-09-28 12:09:22,745 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2021-09-28 12:09:22,875 INFO [http-nio-8080-exec-1] (IndexController.java:16)- 测试办理
+2021-09-28 12:09:22,876 INFO [http-nio-8080-exec-1] (ApiRequestTimeAop.java:38)- API:http://127.0.0.1:8080/ EP: execution(ResultDto com.dj.pms.api.IndexController.getIndex()) GAP: 4
+2021-09-28 12:20:12,587 INFO [restartedMain] (StartupInfoLogger.java:55)- Starting PMS using Java 15 on DESKTOP-L7BH4I1 with PID 5848 (D:\pms\target\classes started by Admin in D:\pms)
+2021-09-28 12:20:12,589 INFO [restartedMain] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2021-09-28 12:20:12,620 INFO [restartedMain] (DeferredLog.java:255)- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-28 12:20:12,620 INFO [restartedMain] (DeferredLog.java:255)- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-28 12:20:13,159 INFO [restartedMain] (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-28 12:20:13,171 INFO [restartedMain] (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-09-28 12:20:13,239 WARN [restartedMain] (Logger.java:44)- No MyBatis mapper was found in '[com.dj.pms]' package. Please check your configuration.
+2021-09-28 12:20:13,638 INFO [restartedMain] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2021-09-28 12:20:13,644 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:20:13,644 INFO [restartedMain] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-09-28 12:20:13,644 INFO [restartedMain] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-09-28 12:20:13,695 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-09-28 12:20:13,695 INFO [restartedMain] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1075 ms
+2021-09-28 12:20:13,728 INFO [restartedMain] (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2021-09-28 12:20:13,777 INFO [restartedMain] (DruidDataSource.java:1003)- {dataSource-1} inited
+2021-09-28 12:20:13,903 INFO [restartedMain] (LogHelper.java:31)- HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-28 12:20:13,929 INFO [restartedMain] (Version.java:44)- HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-28 12:20:13,995 INFO [restartedMain] (JavaReflectionManager.java:56)- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-28 12:20:14,251 INFO [restartedMain] (Dialect.java:175)- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-09-28 12:20:14,730 INFO [restartedMain] (JtaPlatformInitiator.java:52)- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-28 12:20:14,736 INFO [restartedMain] (AbstractEntityManagerFactoryBean.java:437)- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-28 12:20:14,784 WARN [restartedMain] (JpaBaseConfiguration.java:219)- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-28 12:20:15,320 INFO [restartedMain] (StdSchedulerFactory.java:1220)- Using default implementation for ThreadExecutor
+2021-09-28 12:20:15,326 INFO [restartedMain] (SchedulerSignalerImpl.java:61)- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-28 12:20:15,326 INFO [restartedMain] (QuartzScheduler.java:229)- Quartz Scheduler v.2.3.2 created.
+2021-09-28 12:20:15,327 INFO [restartedMain] (RAMJobStore.java:155)- RAMJobStore initialized.
+2021-09-28 12:20:15,327 INFO [restartedMain] (QuartzScheduler.java:294)- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-28 12:20:15,327 INFO [restartedMain] (StdSchedulerFactory.java:1374)- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-28 12:20:15,327 INFO [restartedMain] (StdSchedulerFactory.java:1378)- Quartz scheduler version: 2.3.2
+2021-09-28 12:20:15,327 INFO [restartedMain] (QuartzScheduler.java:2293)- JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@9e4df67
+2021-09-28 12:20:15,364 INFO [restartedMain] (OptionalLiveReloadServer.java:58)- LiveReload server is running on port 35729
+2021-09-28 12:20:15,382 INFO [restartedMain] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:20:15,403 INFO [restartedMain] (TomcatWebServer.java:220)- Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-28 12:20:15,404 INFO [restartedMain] (SchedulerFactoryBean.java:727)- Starting Quartz Scheduler now
+2021-09-28 12:20:15,404 INFO [restartedMain] (QuartzScheduler.java:547)- Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-28 12:20:15,413 INFO [restartedMain] (StartupInfoLogger.java:61)- Started PMS in 3.067 seconds (JVM running for 3.796)
+2021-09-28 12:20:26,801 INFO [http-nio-8080-exec-1] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-28 12:20:26,802 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-09-28 12:20:26,802 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2021-09-28 12:20:26,859 INFO [http-nio-8080-exec-1] (IndexController.java:21)- 测试请求
+2021-09-28 12:20:28,692 INFO [http-nio-8080-exec-1] (ApiRequestTimeAop.java:38)- API:http://127.0.0.1:8080/ EP: execution(ResultDto com.dj.pms.api.IndexController.getIndex()) GAP: 1836
+2021-09-28 12:20:56,972 INFO [http-nio-8080-exec-4] (IndexController.java:21)- 测试请求
+2021-09-28 12:20:58,862 INFO [http-nio-8080-exec-4] (ApiRequestTimeAop.java:38)- API:http://127.0.0.1:8080/ EP: execution(ResultDto com.dj.pms.api.IndexController.getIndex()) GAP: 1890
+2021-09-28 12:21:15,178 INFO [restartedMain] (StartupInfoLogger.java:55)- Starting PMS using Java 15 on DESKTOP-L7BH4I1 with PID 236 (D:\pms\target\classes started by Admin in D:\pms)
+2021-09-28 12:21:15,179 INFO [restartedMain] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2021-09-28 12:21:15,209 INFO [restartedMain] (DeferredLog.java:255)- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-28 12:21:15,209 INFO [restartedMain] (DeferredLog.java:255)- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-28 12:21:15,649 INFO [restartedMain] (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-28 12:21:15,662 INFO [restartedMain] (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-09-28 12:21:15,731 WARN [restartedMain] (Logger.java:44)- No MyBatis mapper was found in '[com.dj.pms]' package. Please check your configuration.
+2021-09-28 12:21:16,193 INFO [restartedMain] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2021-09-28 12:21:16,199 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:21:16,200 INFO [restartedMain] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-09-28 12:21:16,200 INFO [restartedMain] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-09-28 12:21:16,253 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-09-28 12:21:16,253 INFO [restartedMain] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1044 ms
+2021-09-28 12:21:16,285 INFO [restartedMain] (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2021-09-28 12:21:16,377 INFO [restartedMain] (DruidDataSource.java:1003)- {dataSource-1} inited
+2021-09-28 12:21:16,493 INFO [restartedMain] (LogHelper.java:31)- HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-28 12:21:16,517 INFO [restartedMain] (Version.java:44)- HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-28 12:21:16,579 INFO [restartedMain] (JavaReflectionManager.java:56)- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-28 12:21:16,814 INFO [restartedMain] (Dialect.java:175)- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-09-28 12:21:17,284 INFO [restartedMain] (JtaPlatformInitiator.java:52)- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-28 12:21:17,290 INFO [restartedMain] (AbstractEntityManagerFactoryBean.java:437)- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-28 12:21:17,327 WARN [restartedMain] (JpaBaseConfiguration.java:219)- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-28 12:21:17,738 INFO [restartedMain] (StdSchedulerFactory.java:1220)- Using default implementation for ThreadExecutor
+2021-09-28 12:21:17,744 INFO [restartedMain] (SchedulerSignalerImpl.java:61)- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-28 12:21:17,744 INFO [restartedMain] (QuartzScheduler.java:229)- Quartz Scheduler v.2.3.2 created.
+2021-09-28 12:21:17,744 INFO [restartedMain] (RAMJobStore.java:155)- RAMJobStore initialized.
+2021-09-28 12:21:17,745 INFO [restartedMain] (QuartzScheduler.java:294)- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-28 12:21:17,745 INFO [restartedMain] (StdSchedulerFactory.java:1374)- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-28 12:21:17,745 INFO [restartedMain] (StdSchedulerFactory.java:1378)- Quartz scheduler version: 2.3.2
+2021-09-28 12:21:17,745 INFO [restartedMain] (QuartzScheduler.java:2293)- JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1548109b
+2021-09-28 12:21:17,782 INFO [restartedMain] (OptionalLiveReloadServer.java:58)- LiveReload server is running on port 35729
+2021-09-28 12:21:17,804 INFO [restartedMain] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:21:17,824 INFO [restartedMain] (TomcatWebServer.java:220)- Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-28 12:21:17,825 INFO [restartedMain] (SchedulerFactoryBean.java:727)- Starting Quartz Scheduler now
+2021-09-28 12:21:17,825 INFO [restartedMain] (QuartzScheduler.java:547)- Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-28 12:21:17,834 INFO [restartedMain] (StartupInfoLogger.java:61)- Started PMS in 2.876 seconds (JVM running for 3.44)
+2021-09-28 12:21:25,106 INFO [http-nio-8080-exec-1] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-28 12:21:25,106 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-09-28 12:21:25,108 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:547)- Completed initialization in 2 ms
+2021-09-28 12:21:25,165 INFO [http-nio-8080-exec-1] (IndexController.java:21)- 测试请求
+2021-09-28 12:21:27,503 INFO [http-nio-8080-exec-1] (ApiRequestTimeAop.java:42)- API:http://127.0.0.1:8080/ EP: execution(ResultDto com.dj.pms.api.IndexController.getIndex()) GAP: 2340
+2021-09-28 12:22:05,009 INFO [restartedMain] (StartupInfoLogger.java:55)- Starting PMS using Java 15 on DESKTOP-L7BH4I1 with PID 15024 (D:\pms\target\classes started by Admin in D:\pms)
+2021-09-28 12:22:05,011 INFO [restartedMain] (SpringApplication.java:663)- The following profiles are active: dev
+2021-09-28 12:22:05,041 INFO [restartedMain] (DeferredLog.java:255)- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-28 12:22:05,041 INFO [restartedMain] (DeferredLog.java:255)- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-28 12:22:05,461 INFO [restartedMain] (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-28 12:22:05,472 INFO [restartedMain] (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2021-09-28 12:22:05,540 WARN [restartedMain] (Logger.java:44)- No MyBatis mapper was found in '[com.dj.pms]' package. Please check your configuration.
+2021-09-28 12:22:05,973 INFO [restartedMain] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2021-09-28 12:22:05,978 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:22:05,979 INFO [restartedMain] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-09-28 12:22:05,979 INFO [restartedMain] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-09-28 12:22:06,029 INFO [restartedMain] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-09-28 12:22:06,029 INFO [restartedMain] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 987 ms
+2021-09-28 12:22:06,061 INFO [restartedMain] (DruidDataSourceAutoConfigure.java:56)- Init DruidDataSource
+2021-09-28 12:22:06,112 INFO [restartedMain] (DruidDataSource.java:1003)- {dataSource-1} inited
+2021-09-28 12:22:06,223 INFO [restartedMain] (LogHelper.java:31)- HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-28 12:22:06,249 INFO [restartedMain] (Version.java:44)- HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-28 12:22:06,313 INFO [restartedMain] (JavaReflectionManager.java:56)- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-28 12:22:06,539 INFO [restartedMain] (Dialect.java:175)- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-09-28 12:22:06,983 INFO [restartedMain] (JtaPlatformInitiator.java:52)- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-28 12:22:06,988 INFO [restartedMain] (AbstractEntityManagerFactoryBean.java:437)- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-28 12:22:07,027 WARN [restartedMain] (JpaBaseConfiguration.java:219)- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-28 12:22:07,365 INFO [restartedMain] (StdSchedulerFactory.java:1220)- Using default implementation for ThreadExecutor
+2021-09-28 12:22:07,371 INFO [restartedMain] (SchedulerSignalerImpl.java:61)- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-28 12:22:07,371 INFO [restartedMain] (QuartzScheduler.java:229)- Quartz Scheduler v.2.3.2 created.
+2021-09-28 12:22:07,372 INFO [restartedMain] (RAMJobStore.java:155)- RAMJobStore initialized.
+2021-09-28 12:22:07,372 INFO [restartedMain] (QuartzScheduler.java:294)- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-28 12:22:07,372 INFO [restartedMain] (StdSchedulerFactory.java:1374)- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-28 12:22:07,372 INFO [restartedMain] (StdSchedulerFactory.java:1378)- Quartz scheduler version: 2.3.2
+2021-09-28 12:22:07,372 INFO [restartedMain] (QuartzScheduler.java:2293)- JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3c88e45e
+2021-09-28 12:22:07,409 INFO [restartedMain] (OptionalLiveReloadServer.java:58)- LiveReload server is running on port 35729
+2021-09-28 12:22:07,428 INFO [restartedMain] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2021-09-28 12:22:07,448 INFO [restartedMain] (TomcatWebServer.java:220)- Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-28 12:22:07,449 INFO [restartedMain] (SchedulerFactoryBean.java:727)- Starting Quartz Scheduler now
+2021-09-28 12:22:07,449 INFO [restartedMain] (QuartzScheduler.java:547)- Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-28 12:22:07,458 INFO [restartedMain] (StartupInfoLogger.java:61)- Started PMS in 2.666 seconds (JVM running for 3.206)
+2021-09-28 12:22:15,660 INFO [http-nio-8080-exec-1] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-28 12:22:15,661 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-09-28 12:22:15,662 INFO [http-nio-8080-exec-1] (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-09-28 12:22:15,718 INFO [http-nio-8080-exec-1] (IndexController.java:21)- 测试请求
+2021-09-28 12:22:17,112 INFO [http-nio-8080-exec-1] (ApiRequestTimeAop.java:42)- API:http://127.0.0.1:8080/ EP: execution(ResultDto com.dj.pms.api.IndexController.getIndex()) GAP: 1396

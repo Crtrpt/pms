@@ -10,10 +10,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableAsync
 @EnableScheduling
-public class PmsApplication {
+public class PMS {
 
     public static void main(String[] args) {
-        SpringApplication.run(PmsApplication.class, args);
+        SpringApplication.run(PMS.class, args);
     }
 
 }

@@ -1,6 +1,7 @@
-package com.dj.pms.entity;
+package com.dj.pms.modules.wiki.entity;
 
 
+import com.dj.pms.entity.BaseEntity;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.SQLDelete;
@@ -13,13 +14,13 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 @Data
-@SQLDelete(sql = "update `task` SET deleted_at =  unix_timestamp(now()) WHERE id = ?")
+@SQLDelete(sql = "update `wiki` SET deleted_at =  unix_timestamp(now()) WHERE id = ?")
 @Entity
-@Table(name = "task")
+@Table(name = "wiki")
 @Where(clause = "deleted_at is null")
 @DynamicUpdate
 @Cacheable
-public class TaskEntity extends BaseEntity implements Serializable {
+public class WikiEntity extends BaseEntity implements Serializable {
 
     @Id
     String id;
