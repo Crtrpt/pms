@@ -11,16 +11,22 @@
     "
   >
     <div class="px-4 py-2 flex border-b border-gray-200 items-center">
-      <div class="b bg-gray-300 rounded-full">(20)</div>
-      <div class="flex-grow text-sm">name</div>
-      <div class="flex"><PlusIcon class="w-5" /> <PlusIcon class="w-5" /></div>
+      <div class="b bg-gray-300 rounded-full w-6 text-center text-xs p-1">
+        {{ vlist.length }}
+      </div>
+      <div class="flex-grow text-sm pl-2 text-gray-600">{{ data.name }}</div>
+      <div class="flex text-gray-500">
+        <PlusIcon class="w-3 mx-2 cursor-pointer" @click="addTask" />
+        <DotsHorizontalIcon class="w-3 cursor-pointer" />
+      </div>
     </div>
     <div class="p-2 flex-grow swim-content">
       <div
-        v-for="l in data.list"
+        v-for="l in vlist"
         :key="l"
         class="
           p-1
+          my-1
           task
           h-20
           hover:bg-white
@@ -37,13 +43,37 @@
 </template>
 
 <script>
-import { PlusIcon } from "@heroicons/vue/solid";
+import { PlusIcon, DotsHorizontalIcon } from "@heroicons/vue/solid";
 export default {
   components: {
     PlusIcon,
+    DotsHorizontalIcon,
   },
   props: {
     data: Object,
+  },
+  watch: {
+    data: {
+      deep: true,
+      handler(n, o) {
+        this.vlist = this.data.list;
+      },
+    },
+  },
+  created() {
+    this.vlist = this.data.list;
+  },
+  data() {
+    return {
+      vlist: [],
+    };
+  },
+  methods: {
+    addTask() {
+      this.vlist.push({
+        name: "",
+      });
+    },
   },
 };
 </script>
@@ -54,9 +84,10 @@ export default {
   height: 100%;
 }
 .swim-content {
+  width: 300px;
   overflow-y: auto;
 }
 .task {
-  width: 300px;
+  width: 100%;
 }
 </style>

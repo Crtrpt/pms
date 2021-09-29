@@ -31,13 +31,17 @@
         py-2
       "
     >
-      <div
-        v-for="m in mlist"
-        :key="m"
+      <div class="pl-4 py-1 hover:bg-gray-200 cursor-pointer">我的主页</div>
+      <div class="pl-4 py-1 hover:bg-gray-200 cursor-pointer">我的信息</div>
+      <div class="pl-4 py-1 hover:bg-gray-200 cursor-pointer">我的组织</div>
+      <router-link
+        :to="{
+          name: 'login',
+        }"
         class="pl-4 py-1 hover:bg-gray-200 cursor-pointer"
+        style="width: 160px; display: block"
+        >退出</router-link
       >
-        {{ m.name }}
-      </div>
     </div>
   </div>
 </template>

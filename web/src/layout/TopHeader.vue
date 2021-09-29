@@ -1,6 +1,6 @@
 <template>
-  <div class="header border-b border-gray-300 flex flex-row hover:shadow mx-2">
-    <div class="flex-grow flex-row flex p-2 items-center">
+  <div class="header border-b border-gray-200 flex flex-row hover:shadow mx-2">
+    <div class="flex-grow flex-row flex p-1 items-center">
       <img
         class="h-8 px-2"
         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"

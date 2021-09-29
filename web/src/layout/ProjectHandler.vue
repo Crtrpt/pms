@@ -16,13 +16,7 @@
     </div>
     <div
       v-if="display"
-      class="
-        project-handler
-        bg-white
-        border-b border-r border-l border-gray-400
-        shadow
-        py-2
-      "
+      class="project-handler bg-white border border-gray-400 shadow py-2"
     >
       <ProjectList />
     </div>
