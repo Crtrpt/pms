@@ -13,6 +13,12 @@ var route = [
         name: "project",
         path: "/project/:id",
         component: () => import("../layout/Project.vue"),
+        children: [
+          {
+            path: "kanban",
+            component: () => import("../views/project/Kanban.vue"),
+          },
+        ]
       }
     ],
   },

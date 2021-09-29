@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-500 text-white">
+  <div class="bg-blue-500 text-white hover:shadow flex-shrink">
     <div
       v-for="i in mList"
       :key="i"

@@ -12,11 +12,8 @@
       items-center
     "
   >
-    <input
-      class="flex-grow outline-none"
-      placeholder="Ctrl+R 搜索你想搜索的内容"
-    />
-    <SearchIcon class="h-4 text-gray-300" />
+    <input class="flex-grow outline-none" placeholder="Ctrl+R 搜索" />
+    <SearchIcon class="ml-2 h-4 text-gray-300" />
   </div>
 </template>
 
@@ -27,8 +24,4 @@ export default {
   components: { LockClosedIcon, SearchIcon },
 };
 </script>
-<style scoped>
-.top-search {
-  width: 300px;
-}
-</style>
+<style scoped></style>

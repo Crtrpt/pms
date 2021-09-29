@@ -1,15 +1,17 @@
 <template>
-  <div class="header border-b border-gray-300 shadow flex flex-row">
-    <div class="flex-grow flex-row flex p-2">
+  <div class="header border-b border-gray-300 flex flex-row hover:shadow mx-2">
+    <div class="flex-grow flex-row flex p-2 items-center">
       <img
         class="h-8 px-2"
         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
         alt="Workflow"
       />
+      <p class="leading-10">PMS.com</p>
+      <ProjectHandler />
     </div>
     <div class="flex flex-row pr-4 text-gray-400 items-center">
-      <PlusIcon class="h-4 px-1 hover:text-gray-600 cursor-pointer" />
-      <BellIcon class="h-4 px-1 hover:text-gray-600 cursor-pointer" />
+      <AddHandler />
+      <NoticeHandler />
       <TopSearch class="m-2 px-1 hover:text-gray-600 cursor-pointer" />
       <UserHandler />
       <QuestionMarkCircleIcon
@@ -21,6 +23,9 @@
 
 <script>
 import TopSearch from "./TopSearch.vue";
+import NoticeHandler from "./NoticeHandler.vue";
+import AddHandler from "./AddHandler.vue";
+import ProjectHandler from "./ProjectHandler.vue";
 import {
   LockClosedIcon,
   PlusIcon,
@@ -36,6 +41,9 @@ export default {
     BellIcon,
     TopSearch,
     UserHandler,
+    AddHandler,
+    NoticeHandler,
+    ProjectHandler,
   },
   name: "Header",
 };

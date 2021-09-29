@@ -5,9 +5,35 @@
     <TopHeader />
     <div class="flex-grow flex-shrink flex flex-row project">
       <LeftBar />
-      <LeftList class="left h-full w-1/4 border-r border-gray-200"></LeftList>
-      <div class="content flex-grow h-full">
-        <router-view />
+
+      <div class="content flex-grow h-full flex flex-col" style="width: 0">
+        <div class="project-nav flex border-b border-gray-200">
+          <div
+            class="
+              p-2
+              px-4
+              cursor-pointer
+              hover:bg-gray-300
+              border-r border-gray-200
+              bg-blue-400
+              text-white
+            "
+          >
+            看板
+          </div>
+          <div
+            class="
+              p-2
+              px-4
+              cursor-pointer
+              hover:bg-gray-300
+              border-r border-gray-200
+            "
+          >
+            配置
+          </div>
+        </div>
+        <router-view class="flex-grow" />
       </div>
     </div>
   </div>
@@ -15,7 +41,7 @@
 <script>
 import TopHeader from "./TopHeader.vue";
 import LeftBar from "./LeftBar.vue";
-import LeftList from "./LeftList.vue";
+import LeftList from "./ProjectList.vue";
 export default {
   components: {
     TopHeader,
@@ -30,6 +56,6 @@ export default {
   width: 100%;
 }
 .project {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 </style>
