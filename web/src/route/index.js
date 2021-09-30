@@ -1,24 +1,37 @@
 var route = [
   {
     path: "/",
-    component: () => import("../layout/Master.vue"),
-    redirect: '/auth/login',
+    component: () => import("../layout/Workspace.vue"),
     children: [
       {
         name: "home",
         path: "/home",
-        component: () => import("../pages/Home.vue"),
+        component: () => import("../layout/Home.vue"),
       },
       {
         name: "project",
-        path: "/project/:id",
+        path: "/project",
         component: () => import("../layout/Project.vue"),
-        children: [
-          {
-            path: "kanban",
-            component: () => import("../views/project/Kanban.vue"),
-          },
-        ]
+      },
+      {
+        name: "projectDetail",
+        path: "/project/:id",
+        component: () => import("../layout/ProjectDetail.vue"),
+      },
+      {
+        name: "task",
+        path: "/task",
+        component: () => import("../layout/task.vue"),
+      },
+      {
+        name: "organization",
+        path: "/organization",
+        component: () => import("../layout/Organization.vue"),
+      },
+      {
+        name: "calendar",
+        path: "/calendar",
+        component: () => import("../layout/Calendar.vue"),
       }
     ],
   },

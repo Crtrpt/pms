@@ -12,7 +12,7 @@
         hover:text-gray-600
       "
     >
-      <div class="p-2 h-6 w-6 border border-gray-200 rounded-full mx-2">
+      <div class="p-2 h-10 border border-gray-200 rounded-full mx-2">
         <img
           class="h-full"
           src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"

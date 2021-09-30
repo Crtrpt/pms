@@ -7,12 +7,11 @@
         alt="Workflow"
       />
       <p class="leading-10">PMS.com</p>
-      <ProjectHandler />
     </div>
     <div class="flex flex-row pr-4 text-gray-400 items-center">
       <AddHandler />
       <NoticeHandler />
-      <TopSearch class="m-2 px-1 hover:text-gray-600 cursor-pointer" />
+      <!-- <TopSearch class="m-2 px-1 hover:text-gray-600 cursor-pointer" /> -->
       <UserHandler />
       <QuestionMarkCircleIcon
         class="h-4 px-1 hover:text-gray-600 cursor-pointer"

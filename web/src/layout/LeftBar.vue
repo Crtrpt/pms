@@ -1,6 +1,7 @@
 <template>
   <div class="bg-blue-500 text-white hover:shadow flex-shrink">
     <div
+      @click="goView(i)"
       v-for="i in mList"
       :key="i"
       class="
@@ -8,12 +9,15 @@
         flex flex-col
         justify-center
         items-center
-        hover:bg-blue-600
         cursor-pointer
+        hover:bg-gray-100 hover:text-blue-500
       "
+      :class="[
+        this.$route.name == i.name ? 'shadow bg-white text-blue-500' : '',
+      ]"
     >
-      <LockClosedIcon class="w-5 h-5" />
-      <div class="text-sm">{{ i.name }}</div>
+      <component :is="i.icon" class="w-5 h-5" />
+      <div class="text-sm">{{ i.displayName }}</div>
     </div>
   </div>
 </template>
@@ -21,21 +25,60 @@
 <script>
 import {
   LockClosedIcon,
-  PlusIcon,
-  QuestionMarkCircleIcon,
-  BellIcon,
+  CalendarIcon,
+  ClipboardIcon,
+  HomeIcon,
+  OfficeBuildingIcon,
 } from "@heroicons/vue/solid";
 export default {
   name: "LeftBar",
-  components: { LockClosedIcon },
+  components: {
+    LockClosedIcon,
+    CalendarIcon,
+    ClipboardIcon,
+    HomeIcon,
+    OfficeBuildingIcon,
+  },
+  created() {
+    console.log(this.$route.name);
+  },
+  methods: {
+    goView(v) {
+      this.$router.push({ name: v.name });
+    },
+  },
   data() {
     return {
       mList: [
         {
-          name: "项目",
+          displayName: "首页",
+          name: "home",
+          icon: "HomeIcon",
+          active: true,
         },
         {
-          name: "任务",
+          displayName: "项目",
+          name: "project",
+          icon: "LockClosedIcon",
+          active: true,
+        },
+        {
+          displayName: "组织",
+          name: "organization",
+          icon: "OfficeBuildingIcon",
+          active: true,
+        },
+        {
+          displayName: "任务",
+          name: "task",
+          icon: "ClipboardIcon",
+          active: false,
+        },
+        {
+          displayName: "日历",
+          name: "calendar",
+          icon: "CalendarIcon",
+          active: false,
         },
       ],
     };

@@ -12,7 +12,7 @@
         hover:text-gray-600
       "
     >
-      <PlusIcon class="h-4 px-1 hover:text-gray-600 cursor-pointer" />
+      <AdjustmentsIcon class="h-4 px-1 hover:text-gray-600 cursor-pointer" />
     </div>
     <div
       v-if="display"
@@ -24,11 +24,11 @@
 </template>
 
 <script>
-import { PlusIcon } from "@heroicons/vue/solid";
+import { AdjustmentsIcon } from "@heroicons/vue/solid";
 import ProjectList from "./ProjectList.vue";
 export default {
   components: {
-    PlusIcon,
+    AdjustmentsIcon,
     ProjectList,
   },
   data() {
