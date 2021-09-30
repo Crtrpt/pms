@@ -2,6 +2,7 @@ var route = [
   {
     path: "/",
     component: () => import("../layout/Workspace.vue"),
+    redirect :"/home",
     children: [
       {
         name: "home",

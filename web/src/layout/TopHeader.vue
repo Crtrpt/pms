@@ -1,13 +1,13 @@
 <template>
-  <div class="header border-b border-gray-200 flex flex-row hover:shadow mx-2">
-    <div class="flex-grow flex-row flex p-1 items-center">
+  <div class="header border-b border-gray-200 flex flex-row hover:shadow px-2">
+    <a href="/" class="flex-grow flex-row flex py-1 items-center">
       <img
         class="h-8 px-2"
         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
         alt="Workflow"
       />
       <p class="leading-10">PMS.com</p>
-    </div>
+    </a>
     <div class="flex flex-row pr-4 text-gray-400 items-center">
       <AddHandler />
       <NoticeHandler />

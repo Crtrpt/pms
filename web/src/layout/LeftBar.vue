@@ -12,12 +12,13 @@
         cursor-pointer
         hover:bg-gray-100 hover:text-blue-500
       "
+      style="word-break: keep-all"
       :class="[
         this.$route.name == i.name ? 'shadow bg-white text-blue-500' : '',
       ]"
     >
       <component :is="i.icon" class="w-5 h-5" />
-      <div class="text-sm">{{ i.displayName }}</div>
+      <div class="text-sm" style="">{{ i.displayName }}</div>
     </div>
   </div>
 </template>
