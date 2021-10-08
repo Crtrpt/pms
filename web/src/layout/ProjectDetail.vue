@@ -1,7 +1,8 @@
 <template>
   <div class="content flex-grow h-full flex flex-col" style="width: 0">
     <div class="p-2 border-b border-gray-200 flex items-center text-gray-600">
-      <ArrowLeftIcon class="h-5 mx-2" />
+      <GoBack />
+      <div class="text-xl">项目:</div>
       <ProjectHandler />
     </div>
     <div class="project-nav flex border-b border-gray-200">
@@ -70,6 +71,8 @@ import TopHeader from "./TopHeader.vue";
 import LeftBar from "./LeftBar.vue";
 import LeftList from "./ProjectList.vue";
 import ProjectHandler from "./ProjectHandler.vue";
+import GoBack from "./GoBack.vue";
+import TopSearch from "./TopSearch.vue";
 import {
   PlusIcon,
   CogIcon,
@@ -89,6 +92,7 @@ import Task from "../views/project/Task.vue";
 import Setting from "../views/project/Setting.vue";
 export default {
   components: {
+    GoBack,
     Kanban,
     Task,
     Setting,
@@ -96,6 +100,7 @@ export default {
     LeftBar,
     LeftList,
     ProjectHandler,
+    TopSearch,
     CodeIcon,
     PlusIcon,
     ArrowLeftIcon,

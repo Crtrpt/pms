@@ -1,11 +1,17 @@
 <template>
   <div class="content flex-grow h-full flex flex-col" style="width: 0">
-    <div class="p-2 border-b border-gray-200 flex items-center text-gray-600">
-      <ArrowLeftIcon class="h-5 mx-2" />
-      <div class="text-xl">我的项目({{ mList.length || 0 }})</div>
-      <TopSearch class="mx-2" />
+    <div
+      class="
+        p-2
+        border-b border-gray-200
+        flex
+        items-center
+        text-gray-600
+        hover:shadow
+      "
+    >
+      <GoBack />
       <PlusIcon class="h-5 mx-2 cursor-pointer" />
-      <RefreshIcon class="h-5 mx-2 cursor-pointer" />
     </div>
 
     <div class="grid grid-cols-4 gap-1">
@@ -15,9 +21,9 @@
           @click="goProject(i)"
         >
           <div class="flex items-center">
-            <div class="text-xl flex-grow overflow-y-hidden break-normal flex">
+            <div class="text-sm flex-grow overflow-y-hidden break-normal flex">
               <p>#</p>
-              {{ i.displayName.substr(0, 20) }}
+              {{ i?.displayName?.substr(0, 20) || "项目名称" }}
             </div>
             <div class="text text-gray-400 flex-shrink pl-10">
               <DotsVerticalIcon class="w-3" />
@@ -43,11 +49,12 @@
             </div>
           </div>
           <div class="project-member flex text-sm my-2">
-            <div class="flex-grow">成员(20)</div>
-            <div>创始人</div>
+            <div class="flex-grow text-gray-500">成员(20)</div>
+            <div class="text-gray-500">创始人</div>
           </div>
         </div>
       </div>
+      <AddProject @add="add" />
     </div>
   </div>
 </template>
@@ -59,6 +66,8 @@ import Kanban from "../views/project/Kanban.vue";
 import Task from "../views/project/Task.vue";
 import Setting from "../views/project/Setting.vue";
 import TopSearch from "./TopSearch.vue";
+import GoBack from "./GoBack.vue";
+import AddProject from "./AddProject.vue";
 import {
   PlusIcon,
   DotsVerticalIcon,
@@ -77,6 +86,7 @@ import {
 } from "@heroicons/vue/solid";
 export default {
   components: {
+    GoBack,
     Kanban,
     DotsVerticalIcon,
     Task,
@@ -85,6 +95,7 @@ export default {
     LeftBar,
     LeftList,
     TopSearch,
+    AddProject,
     RefreshIcon,
     PlusIcon,
     CogIcon,
@@ -103,147 +114,20 @@ export default {
     return {
       mList: [
         {
-          displayName: "项目1项目1项目1项目1项目1项目1项目1项目1",
+          displayName: "PMS.com项目",
           name: "kanban",
           icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
+          description: "PMS.com 项目管理",
           active: true,
           id: "111111",
         },
         {
-          displayName: "项目1",
+          displayName: "PMS.com项目 手机端",
           name: "kanban",
           icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
+          description: "PMS.com 项目管理",
           active: true,
           id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目1",
-          name: "kanban",
-          icon: "AdjustmentsIcon",
-          description:
-            "测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目测试的项目",
-          active: true,
-          id: "111111",
-        },
-        {
-          displayName: "项目2",
-          name: "task",
-          icon: "ClipboardIcon",
-          description: "测试的项目",
-          active: true,
-          id: "222222",
         },
       ],
       view: "kanban",
@@ -252,6 +136,9 @@ export default {
   methods: {
     goProject(v) {
       this.$router.push(`/project/${v.id}`);
+    },
+    add() {
+      this.mList.push({});
     },
     goView(v) {
       this.view = v.name;
