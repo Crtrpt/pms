@@ -4,8 +4,6 @@
   <div class="flex flex-col c">
     <TopHeader />
     <div class="flex-grow flex-shrink flex flex-row project">
-      <LeftBar />
-
       <router-view />
     </div>
   </div>

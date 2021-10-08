@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <div class="flex pb-2 text-xs text-gray-600 mr-10">
+    <!-- <div class="flex text-xs text-gray-600 mr-10">
       <div
         class="
           p-0.5
@@ -29,7 +29,7 @@
       >
         2021-9-30
       </div>
-    </div>
+    </div> -->
     <div ref="chart"></div>
   </div>
 </template>

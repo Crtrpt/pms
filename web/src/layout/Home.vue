@@ -1,17 +1,20 @@
 <template>
-  <div class="w-full">
-    <div class="flex flex-col">
-      <div class="text-xl text-gray-600 p-2 border-b border-gray-200">
-        活动图
+  <div class="w-full" style="overflow: auto">
+    <div class="flex flex-row p-2 container mx-auto">
+      <div class="flex-grow">
+        <ActiveChart class="p-2 container mx-auto" />
+
+        <ActiveFlow class="p-2 container mx-auto" />
       </div>
-      <ActiveChart class="p-2 justify-center items-end" />
     </div>
   </div>
 </template>
 
 <script>
 import ActiveChart from "./ActiveChart.vue";
+import ActiveFlow from "./ActiveFlow.vue";
+import Today from "./Today.vue";
 export default {
-  components: { ActiveChart },
+  components: { ActiveChart, ActiveFlow, Today },
 };
 </script>
